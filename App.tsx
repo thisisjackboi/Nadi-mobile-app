@@ -150,18 +150,14 @@ const SplashScreen: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
       <div className="absolute top-0 right-0 w-full h-1/3 bg-gradient-to-b from-nadi-orange/20 to-transparent" />
       <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-nadi-green/20 to-transparent" />
 
-      <div className="z-10 flex flex-col items-center animate-slide-up text-center">
-        <div className="mb-8 relative">
-           {/* Animated Rings */}
-           <div className="absolute inset-0 rounded-full border-4 border-orange-200 animate-ping opacity-20"></div>
-           <div className="absolute inset-0 rounded-full border-4 border-green-200 animate-ping delay-700 opacity-20"></div>
-           
-           {/* New Image Container */}
-           <div className="w-56 h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl animate-bounce-slight relative z-10">
+      <div className="z-10 flex flex-col items-center animate-slide-up text-center w-full">
+        <div className="mb-8 relative flex justify-center w-full">
+           {/* Splash Image Container */}
+           <div className="w-72 h-auto animate-bounce-slight relative z-10">
              <img 
-               src="https://i.ibb.co/gFZtW6N/Designer-1.jpg" 
-               className="w-full h-full object-cover" 
-               alt="Honorable Leader"
+               src="\splash.png" 
+               className="w-full h-full object-contain drop-shadow-2xl" 
+               alt="Nadi App"
              />
            </div>
         </div>
