@@ -53,6 +53,7 @@ export type ScreenName =
   | 'LOGIN_OTP' 
   | 'LOGIN_AADHAAR' 
   | 'DASHBOARD' 
+  | 'ALL_GRIEVANCES'
   | 'SUBMIT_STEP_1' 
   | 'SUBMIT_STEP_2' 
   | 'SUBMIT_STEP_3' 

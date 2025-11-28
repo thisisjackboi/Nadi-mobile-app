@@ -15,11 +15,12 @@
             },
             colors: {
               nadi: {
-                orange: '#FFB380',
-                orangeDark: '#E6955F',
-                blue: '#A3C4F3',
-                blueDark: '#7AA6E0',
-                bg: '#F8FAFC',
+                orange: '#FF9933',   // BJP Saffron
+                orangeDark: '#D97706',
+                green: '#138808',    // BJP Green
+                greenLight: '#4ADE80',
+                blue: '#2563EB',     // Standard Blue
+                bg: '#FFF7ED',       // Warm Saffron tint background
                 text: '#1E293B',
                 lightText: '#64748B'
               }
@@ -28,7 +29,8 @@
               'fade-in': 'fadeIn 0.5s ease-out',
               'slide-up': 'slideUp 0.5s ease-out',
               'slide-in-right': 'slideInRight 0.3s ease-out',
-              'bounce-slight': 'bounceSlight 2s infinite',
+              'bounce-slight': 'bounceSlight 3s infinite ease-in-out',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
             },
             keyframes: {
               fadeIn: {
@@ -44,8 +46,8 @@
                 '100%': { transform: 'translateX(0)' },
               },
               bounceSlight: {
-                '0%, 100%': { transform: 'translateY(-5%)' },
-                '50%': { transform: 'translateY(0)' },
+                '0%, 100%': { transform: 'translateY(-2%)' },
+                '50%': { transform: 'translateY(2%)' },
               }
             }
           },
@@ -55,7 +57,7 @@
     <style>
       body {
         -webkit-tap-highlight-color: transparent;
-        background-color: #F8FAFC;
+        background-color: #FFF7ED;
       }
       /* Custom Scrollbar for hidden look */
       .scrollbar-hide::-webkit-scrollbar {
