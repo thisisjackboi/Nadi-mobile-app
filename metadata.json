@@ -1,0 +1,8 @@
+{
+  "name": "copy of Nadi",
+  "description": "A citizen grievance management application with a focus on intuitive UI/UX, bridging the gap between people and governance.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
